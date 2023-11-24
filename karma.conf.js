@@ -1,10 +1,10 @@
 module.exports = function (config) {
   config.set({
-    browsers: ['ChromeSandbox'],
+    browsers: ['ChromeNoSandbox'],
     customLaunchers: {
-      ChromeSandbox: {
-        base: 'ChromeHeadless',
-        flags: ['--no-sandbox']
+      ChromeNoSandbox: {
+        base: 'Chrome',
+        flags: ['--no-sandbox', '--disable-gpu']
       }
     }
   });
