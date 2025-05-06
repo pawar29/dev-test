@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     tools {
-        nodejs "Node16"  // Use the name you configured in the NodeJS installation
+        nodejs "NodeJS"  // Use the name you configured in the NodeJS installation
     }
     
     stages {
