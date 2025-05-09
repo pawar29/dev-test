@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{tool}} Report</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    h1 { color: #2c3e50; }
+    .issue { border: 1px solid #ccc; padding: 1em; margin-bottom: 1em; }
+    .severity { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>{{tool}} Report</h1>
+  {{#results}}
+    <div class="issue">
+      <p class="severity">Severity: {{Severity}}</p>
+      <p>Target: {{Target}}</p>
+      <p>Type: {{Type}}</p>
+      <p>Message: {{Message}}</p>
+      <p>Package: {{PkgName}} ({{InstalledVersion}})</p>
+      <p>Vulnerability: {{VulnerabilityID}}</p>
+    </div>
+  {{/results}}
+</body>
+</html>
